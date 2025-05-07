@@ -11,7 +11,7 @@ const root = createRoot(container!);
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <p>123</p>
+      <App />
     </BrowserRouter>
   </React.StrictMode>,
 );
