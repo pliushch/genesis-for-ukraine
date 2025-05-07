@@ -48,9 +48,6 @@
       "last 1 safari version"
     ]
   },
-  "engines": {
-    "node": ">=18.19.1"
-  },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@types/react-scroll": "^1.8.3",

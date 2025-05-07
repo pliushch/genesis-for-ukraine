@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, HashRouter as Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Main from 'src/pages/Main';
 import { ROUTES } from 'src/constants';
 import Form from 'src/pages/Form';
