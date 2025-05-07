@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/pliushch.github.io/genesis-for-ukraine/static/css/main.d052db07.css",
-    "main.js": "/pliushch.github.io/genesis-for-ukraine/static/js/main.ea17a4f1.js",
+    "main.js": "/pliushch.github.io/genesis-for-ukraine/static/js/main.aed3457c.js",
     "static/media/military-help.png": "/pliushch.github.io/genesis-for-ukraine/static/media/military-help.229545ef4430bff781f5.png",
     "static/media/military-help-all.png": "/pliushch.github.io/genesis-for-ukraine/static/media/military-help-all.edd012bd4390dbd38d81.png",
     "static/media/helps.png": "/pliushch.github.io/genesis-for-ukraine/static/media/helps.04fb3c3595e71266047d.png",
@@ -17,10 +17,10 @@
     "static/media/warning.svg": "/pliushch.github.io/genesis-for-ukraine/static/media/warning.3b953cad959b8c6a48a2b747c9845f72.svg",
     "static/media/succeed.svg": "/pliushch.github.io/genesis-for-ukraine/static/media/succeed.d3362d50969d27b4eae815d69c946304.svg",
     "main.d052db07.css.map": "/pliushch.github.io/genesis-for-ukraine/static/css/main.d052db07.css.map",
-    "main.ea17a4f1.js.map": "/pliushch.github.io/genesis-for-ukraine/static/js/main.ea17a4f1.js.map"
+    "main.aed3457c.js.map": "/pliushch.github.io/genesis-for-ukraine/static/js/main.aed3457c.js.map"
   },
   "entrypoints": [
     "static/css/main.d052db07.css",
-    "static/js/main.ea17a4f1.js"
+    "static/js/main.aed3457c.js"
   ]
 }
