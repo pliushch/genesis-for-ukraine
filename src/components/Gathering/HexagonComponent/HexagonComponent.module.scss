@@ -1,0 +1,134 @@
+@import 'src/assets/styles/mixins';
+
+.hexagon {
+  position: relative;
+  clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
+}
+
+.hexagonAllAmount {
+  width: 90px;
+  height: 79px;
+  background-color: $gatheringSecondary;
+}
+
+.hexagonLight,
+.hexagonGrey {
+  width: 82px;
+  height: 72px;
+}
+
+.hexagonLight {
+  background-color: $textGrey;
+}
+
+.hexagonGrey {
+  background-color: white;
+}
+
+.hexagonNumber {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hexagonNumberAllAmount {
+  font-size: 52px;
+}
+
+.hexagonNumberGrey,
+.hexagonNumberLight {
+  font-size: 34px;
+}
+
+.notActive {
+  opacity: 0.5;
+}
+
+.hexagonNumberGrey {
+  color: $textGrey;
+}
+
+.hexagonNumberLight {
+  color: white;
+}
+
+.currencyAllAmount {
+  font-size: 60px;
+}
+
+.currencyGrey,
+.currencyLight {
+  font-size: 43px;
+}
+
+.currencyGrey {
+  color: white;
+}
+
+.currencyLight {
+  color: $textGrey;
+}
+
+@include respond-to(m) {
+  .hexagonLight,
+  .hexagonGrey {
+    width: 57px;
+    height: 50px;
+  }
+}
+
+@include respond-to(s) {
+  .hexagonLight,
+  .hexagonGrey {
+    width: 47px;
+    height: 40px;
+  }
+
+  .hexagonNumberAllAmount {
+    font-size: 35px;
+  }
+  .currencyAllAmount {
+    font-size: 60px;
+  }
+
+  .hexagonAllAmount {
+    width: 50px;
+    height: 46px;
+  }
+}
+
+@include respond-to(xs) {
+  .hexagonNumberAllAmount {
+    font-size: 20px;
+  }
+  .currencyAllAmount {
+    font-size: 31px;
+  }
+
+  .hexagonAllAmount {
+    width: 36px;
+    height: 31px;
+  }
+
+  .hexagonLight,
+  .hexagonGrey {
+    min-width: 30px;
+    max-width: 40px;
+    width: 9%;
+
+    min-height: 26px;
+    max-height: 30px;
+    height: 7vw;
+  }
+
+  .hexagonNumberGrey,
+  .hexagonNumberLight {
+    font-size: 16px;
+  }
+
+  .currencyGrey,
+  .currencyLight {
+    font-size: 21px;
+  }
+}

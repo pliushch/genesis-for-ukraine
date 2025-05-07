@@ -1,0 +1,200 @@
+@import "src/assets/styles/mixins";
+
+.entryScreenBg {
+  background: url("../../../assets/images/gathering/hero-bg.jpg");
+  background-size: cover;
+  padding-bottom: 25vh;
+
+  .entryScreenWrapper {
+    @include pageContentWidth($maximalContainerWidth);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 12vh;
+
+    .description {
+      padding-top: 20vh;
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+
+      .descriptionText {
+        max-width: 633px;
+
+        .buttonSupport {
+          margin-top: 20px;
+          height: 66px;
+          font-size: 29px;
+
+          .hexagon {
+            height: 100%;
+            border-right: 3px solid white;
+            display: flex;
+            align-items: center;
+            padding:  0 15px;
+
+            svg {
+              height: 36px;
+              width: 33px;
+            }
+          }
+
+          p {
+            align-items: center;
+            padding:  0 20px;
+            font-size: 24px;
+            font-weight: 600;
+          }
+        }
+
+        h1, h3 {
+          font-weight: 600;
+          font-style: normal;
+
+        }
+
+        h1 {
+          margin-bottom: 5vh;
+          font-size: 118.403px;
+          line-height: 107%;
+          letter-spacing: 3.552px;
+        }
+
+        h3 {
+          font-size: 40px;
+          line-height: 130%;
+        }
+      }
+
+      .logosWrapper {
+        margin-top: 10vh;
+        display: flex;
+        gap: 80px;
+        align-items: end;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@include respond-to('s') {
+  .entryScreenBg {
+    background: $gatheringSecondary url("../../../assets/images/gathering/hero_bg_mob.jpg") no-repeat bottom;
+    background-size: cover;
+    .entryScreenWrapper {
+      padding: 114px 40px 0;
+      text-align: center;
+      flex-direction: column;
+      align-items: center;
+
+      .description {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        .descriptionText {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          h3 {
+            font-size: 35px;
+          }
+
+          h1 {
+            font-size: 80px;
+          }
+
+        }
+
+        .logosWrapper {
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+@include respond-to('m') {
+  .entryScreenBg {
+    .entryScreenWrapper {
+      justify-content: center;
+      gap: 0;
+      padding: 0 40px 0;
+
+      .description{
+        flex-direction: column;
+        align-items: center;
+
+        .descriptionText {
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+      }
+    }
+}
+
+@include respond-to(xs) {
+  .entryScreenBg {
+    padding-bottom: 300px;
+
+    .entryScreenWrapper {
+      @include mobilePaddings;
+      padding-top: 114px;
+      gap: 46px;
+      text-align: start;
+      flex-direction: column;
+      align-items: center;
+
+      .description {
+        padding: 0;
+        flex-direction: column-reverse;
+
+
+        .descriptionText {
+          h3 {
+            font-size: 24px;
+            line-height: 140%;
+          }
+
+          h1 {
+            font-size: 54px;
+            letter-spacing: 1.6px;
+            margin-bottom: 15px;
+            line-height: 115%;
+          }
+
+          .buttonSupport {
+            height: 55px;
+            p {
+              font-size: 16px;
+            }
+          }
+        }
+
+        .logosWrapper {
+          justify-content: start;
+          gap: 38px;
+          margin-top: 0;
+          margin-bottom: 42px;
+
+          svg {
+            width: auto;
+          }
+
+          [name='come_back_alive'] {
+            height: 53px;
+          }
+
+          [name='genesis'] {
+            height: 33px;
+          }
+
+        }
+      }
+
+    }
+  }
+}

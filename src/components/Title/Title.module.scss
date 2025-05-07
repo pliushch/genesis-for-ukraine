@@ -1,0 +1,11 @@
+@import "src/assets/styles/mixins";
+
+.title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+
+  @include respond-to(l) {
+    font-size: 80px;
+  }
+}

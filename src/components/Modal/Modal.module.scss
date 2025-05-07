@@ -1,0 +1,31 @@
+@import "src/assets/styles/mixins";
+
+.wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $modal_background;
+  z-index: 5;
+}
+
+.container {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #1F58B3;
+  border-radius: 16px;
+  padding: 24px;
+  position: relative;
+  max-width: 380px;
+  @include respond-to(l) {
+    max-width: 420px;
+  }
+}
+
+.close {
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+}

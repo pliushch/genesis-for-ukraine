@@ -1,0 +1,40 @@
+@import "src/assets/styles/mixins";
+
+.wrapper {
+  background-color: $gatheringSecondary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+}
+
+
+.logosWrapper {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo {
+  color: white;
+  width: 123px;
+  height: 54px;
+  cursor: pointer;
+}
+
+@include respond-to(xs) {
+  .wrapper {
+    height: 186px;
+  }
+
+  [name='come_back_alive'] {
+   width: 97px;
+    height: 50px;
+  }
+
+  [name='genesis'] {
+    width: 72px;
+    height: 32px;
+  }
+}

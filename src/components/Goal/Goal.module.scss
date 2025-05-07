@@ -1,0 +1,60 @@
+@import "src/assets/styles/mixins";
+
+.wrapper {
+  position: relative;
+  padding: 50px 40px;
+  color: white;
+  background: #140F2E;
+
+
+  @include respond-to(l) {
+    display: flex;
+    background: none;
+    padding: 80px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-image: url('../../assets/images/3d-sea.png');
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
+  }
+}
+
+.title {
+  font-weight: 500;
+  font-size: 27px;
+  margin-bottom: 30px;
+
+  @include respond-to(l) {
+    margin-bottom: 0;
+    font-size: 80px;
+    margin-right: 150px;
+    flex-shrink: 0;
+    line-height: 50%;
+  }
+}
+
+.description {
+  font-size: 14px;
+  @include hideOnDesktop();
+}
+
+.descriptionDesktop {
+  @include hideOnMobile();
+
+  font-size: 28px;
+}
+
+.break {
+  display: block;
+
+  @include respond-to(l) {
+    display: none;
+  }
+}

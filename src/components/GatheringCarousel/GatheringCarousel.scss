@@ -1,0 +1,129 @@
+@import 'src/assets/styles/mixins';
+
+.slick-list {
+  overflow: visible;
+
+  @include respond-to(s) {
+    overflow: hidden;
+    width: 304px;
+    height: 202px;
+  }
+
+  .slick-slide {
+    width: 632px;
+    transition: all 0.2s ease;
+
+    @include respond-to(s) {
+      width: 304px;
+    }
+
+    img {
+      width: 100%;
+
+      @include respond-to(s) {
+        width: 304px;
+        height: 202px;
+      }
+    }
+  }
+}
+
+.slick-active {
+  margin-left: 160px;
+  margin-right: 160px;
+  @include respond-to(s) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  img {
+    transform: scale(1.4);
+
+    @include respond-to(s) {
+      transform: scale(1);
+    }
+  }
+}
+
+.slick-track {
+  display: flex;
+  align-items: center;
+  margin-left: -160px;
+
+  @include respond-to(s) {
+    display: block;
+    margin-left: 0;
+  }
+}
+
+.slick-arrow {
+  width: fit-content;
+  cursor: pointer;
+  color: #fff;
+  width: 28px;
+  height: 32px;
+
+  @include respond-to(s) {
+    width: 19px;
+    height: 22px;
+  }
+}
+
+.slick-next {
+  transform: rotateY(180deg);
+  top: auto;
+  bottom: -280px;
+  left: calc(50% + 60px);
+
+  @include respond-to(s) {
+    bottom: -187px;
+    left: calc(50% + 30px);
+  }
+}
+
+.slick-prev {
+  top: auto;
+  bottom: -296px;
+  left: calc(50% - 80px);
+
+  @include respond-to(s) {
+    bottom: -198px;
+    left: calc(50% - 50px);
+  }
+}
+
+.paginationBulletWrapper {
+  width: fit-content;
+  margin: auto;
+  clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
+  --weblit-clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
+  background: #fff;
+  border: 1px solid #fff;
+}
+
+.paginationBullet {
+  width: 13px;
+  height: 12px;
+  margin: auto;
+  clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
+  --weblit-clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
+  background: #6d7355;
+}
+
+.slick-active .paginationBullet {
+  background: #fff;
+}
+
+.slick-dots {
+  bottom: -370px;
+
+  @include respond-to(s) {
+    bottom: -260px;
+  }
+}
+
+.customPagination {
+  width: fit-content !important;
+  margin: 0 auto !important;
+  color: #fff;
+}

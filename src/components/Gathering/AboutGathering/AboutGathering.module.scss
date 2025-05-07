@@ -1,0 +1,198 @@
+@import 'src/assets/styles/mixins';
+
+.aboutGathering {
+  background-image: url('../../../assets/images/gathering/aboutGathering/aboutGatheringBg.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+  background-color: $gatheringSecondaryDarkBlue;
+
+  .orangeBacklight {
+    color: $honeycombsColor;
+  }
+
+  .aboutGatheringWrapper {
+    padding-top: 161px;
+    padding-bottom: 187px;
+    @include pageContentWidth($maximalContainerWidth);
+
+    h2 {
+      margin-bottom: 62px;
+      max-width: 981px;
+    }
+
+    .descriptionGathering {
+      margin-bottom: 116px;
+
+      h4 {
+        margin-bottom: 50px;
+      }
+
+      a {
+        color: white;
+        text-decoration-line: underline;
+      }
+
+      .descriptionsWrapper {
+        display: flex;
+        justify-content: space-between;
+        
+        p {
+          width: 48%;
+          color: #ced0d7;
+        }
+      }
+    }
+
+    .descriptionImgWrapper {
+      margin-bottom: 172px;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      .desktop {
+        display: block;
+      }
+
+      .mobile {
+        display: none;
+      }
+    }
+
+    .descriptionWhatNeed {
+      columns: 2 400px;
+      column-gap: 90px;
+
+      h4 {
+        column-span: all;
+        margin-bottom: 54px;
+      }
+
+      .whatNeedListWrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 35px;
+
+        .whatNeedItem {
+          display: flex;
+          gap: 31px;
+
+          div {
+            height: 21px;
+            width: 24px;
+            margin-top: 7px;
+            svg {
+              path {
+                fill: $honeycombsColor;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(s) {
+  .aboutGathering {
+    .aboutGatheringWrapper {
+      padding-bottom: 87px;
+      padding-top: 99px;
+
+      h2 {
+        font-size: 46px;
+        @include mobilePaddings;
+
+        margin-bottom: 48px;
+      }
+
+      h4 {
+        font-size: 30px;
+      }
+
+      .descriptionGathering {
+        @include mobilePaddings;
+
+        .descriptionsWrapper {
+          p {
+            font-size: 20px;
+          }
+        }
+      }
+
+      .descriptionWhatNeed {
+        @include mobilePaddings;
+      }
+    }
+  }
+}
+
+@include respond-to(xs) {
+  .aboutGathering {
+    background-size: initial;
+
+    .aboutGatheringWrapper {
+      h2 {
+        font-size: 36px;
+      }
+
+      h4 {
+        font-size: 20px;
+      }
+      .descriptionImgWrapper {
+        margin-bottom: 86px;
+
+        .desktop {
+          display: none;
+        }
+
+        .mobile {
+          display: block;
+        }
+      }
+
+      .descriptionGathering {
+        margin-bottom: 48px;
+
+        .descriptionsWrapper {
+          flex-direction: column;
+          gap: 40px;
+
+          p {
+            font-size: 16px;
+            width: 100%;
+          }
+        }
+      }
+
+      .descriptionWhatNeed {
+        .whatNeedListWrapper {
+          .whatNeedItem {
+            gap: 18px;
+            p {
+              font-size: 16px;
+            }
+
+            div {
+              svg {
+                height: 12px;
+                width: 14px;
+                path {
+                  fill: $honeycombsColor;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(m) {
+  .aboutGathering {
+    @include mobilePaddings;
+  }
+}

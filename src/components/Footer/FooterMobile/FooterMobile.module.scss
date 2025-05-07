@@ -1,0 +1,59 @@
+@import "src/assets/styles/mixins";
+
+.wrapper {
+  background: #fff;
+  padding: 40px 20px 40px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.policiesWrapper {
+  margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logoWrapper {
+  margin-top: 6px;
+}
+
+.list {
+  margin-top: auto;
+}
+
+.contacts {
+  flex-grow: 1;
+  margin-bottom: 70px;
+}
+
+.contractsTitle {
+  font-size: 27px;
+  margin-bottom: 20px;
+}
+
+.email {
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.policies {}
+
+.listItem {
+  &:not(:last-child) {
+    margin-bottom: 6px;
+  }
+}
+
+.button {
+  padding: 22px 32px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.text {
+  font-size: 10px;
+  color: #898796;
+  margin-bottom: 5px;
+}

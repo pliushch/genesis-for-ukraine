@@ -1,0 +1,76 @@
+@import "src/assets/styles/mixins";
+
+.wrapper {
+  position: relative;
+  color: white;
+  padding: 55px 30px 55px 40px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url('../../assets/images/3d-sea.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+
+  @include respond-to(l) {
+    padding: 100px 80px;
+
+  }
+}
+
+.textWrapper {
+  margin-bottom: 55px;
+
+  @include respond-to(l) {
+    margin-bottom: 166px;
+  }
+}
+
+.title {
+  font-size: 56px;
+  font-weight: 500;
+  margin-bottom: 26px;
+  line-height: 100%;
+
+  @include respond-to(l) {
+    font-size: 135px;
+    margin-bottom: 57px;
+  }
+}
+
+.subtitle {
+  font-size: 14px;
+
+  @include respond-to(l) {
+    font-size: 28px;
+  }
+}
+
+.buttonWrapper {
+  @include respond-to(l) {
+    display: flex;
+  }
+}
+
+.buttonHelp {
+  margin-bottom: 27px;
+
+  @include respond-to(l) {
+    margin-right: 40px;
+    margin-bottom: 0;
+  }
+}
+
+.button {
+  height: 40px;
+
+  @include respond-to(l) {
+    height: 64px;
+  }
+}

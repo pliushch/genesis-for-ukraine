@@ -1,0 +1,31 @@
+@import "src/assets/styles/mixins";
+
+.input {
+  width: 100%;
+  height: 144px;
+  background: white;
+  border: 1px solid $lightSecondary;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Montserrat, sans-serif;
+  resize: none;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::placeholder {
+    color: $lightSecondary
+  }
+}
+
+.label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 8px;
+  display: inline-block;
+}

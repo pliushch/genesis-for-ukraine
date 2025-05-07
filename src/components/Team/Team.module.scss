@@ -1,0 +1,62 @@
+@import "src/assets/styles/mixins";
+
+.container {
+  @include sectionSidePaddings;
+  @include pageContentWidth($maximalContainerWidth);
+  background: #F4F4F6;
+  display: flex;
+  flex-direction: column;
+  @include respond-to(l) {
+    padding: 40px;
+    border-radius: 24px;
+  }
+}
+
+.title {
+  margin-bottom: 24px;
+  @include respond-to(l) {
+    margin-bottom: 48px;
+  }
+}
+
+.list {
+  margin-bottom: -40px;
+  @include respond-to(l) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+}
+
+.item {
+  text-align: center;
+  margin-bottom: 40px;
+  @include respond-to(l) {
+    flex-basis: 25%;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.img {
+  border-radius: 50%;
+  margin-bottom: 24px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.name {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.position, .direction {
+  color: $lightSuccess;
+  line-height: 150%;
+}
+
+.position {
+  margin-bottom: 8px;
+}

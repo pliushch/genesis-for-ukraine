@@ -1,0 +1,9 @@
+@import "src/assets/styles/mixins";
+
+.mobile {
+  @include hideOnDesktop
+}
+
+.desktop {
+  @include hideOnMobile()
+}

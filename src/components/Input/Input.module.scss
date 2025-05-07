@@ -1,0 +1,45 @@
+@import "src/assets/styles/mixins";
+
+.container {
+  position: relative;
+}
+
+.input, .error {
+  width: 100%;
+  height: 48px;
+  background: white;
+  border: 1px solid $lightSecondary;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Montserrat, sans-serif;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::placeholder {
+    color: $lightSecondary
+  }
+}
+
+.error {
+  border: 1px solid $error;
+}
+
+.label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.errorText {
+  text-align: left;
+  color: $error;
+  font-size: 12px;
+  position: absolute;
+}

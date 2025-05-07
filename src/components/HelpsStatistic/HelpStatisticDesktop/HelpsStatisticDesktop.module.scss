@@ -1,0 +1,74 @@
+@import "src/assets/styles/mixins";
+
+.wrapper {
+  display: flex;
+}
+
+.sumWrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 80px;
+  background: #1F58B3;
+  flex-shrink: 0;
+}
+
+.arrow {
+  flex-shrink: 0;
+}
+
+.sumText {
+  margin-top: auto;
+  color: #FFF;
+  font-size: 60px;
+}
+
+.totalWrapper {
+  background: #FFF;
+  display: flex;
+  align-items: center;
+  padding: 35px 80px;
+}
+
+.totalTitle {
+  margin-right: 35px;
+}
+
+.totalDescription {
+  font-size: 36px;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.listItem {
+  width: calc(100% / 3);
+  padding: 75px;
+}
+
+.listTitle {
+  margin-bottom: 17px;
+}
+
+.listDescription {
+  font-size: 20px;
+}
+
+.lightWrapper {
+  background: #ffffff;
+}
+
+.semiLightWrapper {
+  background: #DCE9FF;
+}
+
+.semiDarkWrapper {
+  color: white;
+  background: #1F58B3;
+}
+
+.darkWrapper {
+  color: white;
+  background: #140F2E;
+}

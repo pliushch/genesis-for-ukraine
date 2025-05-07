@@ -1,0 +1,37 @@
+@import "reset";
+@import "mixins";
+@import "vars.module";
+
+@font-face {
+  font-family: 'Gilroy';
+  src: local('Gilroy'), url('../fonts/Gilroy/Gilroy-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: local('Inter'), url('../fonts/Inter/Inter-Regular.woff') format('woff');
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $primary;
+}
+
+h1, h2 {
+  font-family: Gilroy, sans-serif;
+  line-height: 130%;
+}
+
+p, li {
+  line-height: 130%;
+}
+

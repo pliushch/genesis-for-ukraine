@@ -1,0 +1,64 @@
+@import "src/assets/styles/mixins";
+
+.header {
+  flex-shrink: 0;
+  font-family: Open Sans, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid $light;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.priceWrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bodyWrapper {
+  overflow-y: auto;
+  position: relative;
+  flex-grow: 1;
+}
+
+.body {
+  min-height: 475px;
+  padding-top: 20px;
+  height: 100%;
+}
+
+.bodyInProgress {
+  visibility: hidden;
+}
+
+
+.loaderWrapper {
+  pointer-events: none;
+  position: absolute;
+  z-index: 200;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paymentFailed {
+  padding-bottom: 10px;
+
+  @include respond-to(l) {
+    max-height: 340px;
+  }
+}
+
+.paymentFailedTitle {
+  color: $primary;
+}

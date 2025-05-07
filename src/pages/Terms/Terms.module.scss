@@ -1,0 +1,50 @@
+@import "src/assets/styles/mixins";
+
+.container {
+  @include sectionSidePaddings;
+  @include pageContentWidth($maximalContainerWidth);
+}
+
+.title, .subtitle {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  @include respond-to(l) {
+    margin-bottom: 30px;
+  }
+}
+
+.subtitle {
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.text, .list {
+  text-indent: 25px;
+  line-height: 150%;
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  @include respond-to(l) {
+    font-size: 16px;
+    text-indent: 35px;
+  }
+}
+
+.list {
+  text-indent: initial;
+  list-style-type: disc;
+  & li {
+    margin-left: 16px;
+  }
+}
+
+.link {
+  color: blue;
+  text-decoration: underline;
+}
+
+.bold {
+  font-weight: 600;
+}

@@ -1,0 +1,133 @@
+@import 'src/assets/styles/mixins';
+
+.wrapper {
+  color: black;
+  padding-top: 288px;
+  padding-bottom: 194px;
+  @include pageContentWidth($maximalContainerWidth);
+  position: relative;
+
+  .honeyCombs {
+    position: absolute;
+    top: 0;
+    left: 25%;
+  }
+
+  .aboutCompanies {
+    margin-bottom: 101px;
+
+    h2 {
+      margin-bottom: 65px;
+      color: $gatheringSecondaryDarkBlue;
+      font-size: 60px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 120%;
+    }
+
+    p {
+      color: $gatheringSecondaryDarkBlue;
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 140.8%;
+    }
+  }
+
+  .companiesMobile {
+    display: none;
+  }
+  .companiesWrapper {
+    columns: 2 580px;
+    column-gap: 37px;
+  
+    @include respond-to(l) {
+      columns: 1 1200px;
+      width: 100%;
+    }
+  }
+}
+
+@include respond-to(s) {
+  .wrapper {
+    @include mobilePaddings;
+    margin-top: 71px;
+
+    .honeyCombs {
+      display: none;
+    }
+
+    .companiesWrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .companiesMobile {
+      display: flex;
+    }
+
+    .companiesDesktop {
+      display: none;
+    }
+
+    .aboutCompanies {
+      h2 {
+        font-size: 45px;
+        margin-bottom: 40px;
+      }
+      p {
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+@include respond-to(m) {
+  .wrapper {
+    @include mobilePaddings;
+    margin-top: 71px;
+
+    .honeyCombs {
+      display: none;
+    }
+
+    .companiesWrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .companiesMobile {
+      display: flex;
+    }
+
+    .companiesDesktop {
+      display: none;
+    }
+  }
+}
+
+@include respond-to(xs) {
+  .wrapper {
+    margin-bottom: 108px;
+
+    .honeyCombs {
+      display: none;
+    }
+
+    .aboutCompanies {
+      margin-bottom: 34px;
+
+      h2 {
+        line-height: 115%;
+        letter-spacing: 1.08px;
+        font-size: 36px;
+        margin-bottom: 48px;
+      }
+
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+}

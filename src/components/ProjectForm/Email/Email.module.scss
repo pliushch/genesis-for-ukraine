@@ -1,0 +1,47 @@
+@import "src/assets/styles/mixins";
+
+.wrapper {
+}
+
+.icon {
+  margin-bottom: 48px;
+}
+
+.title {
+  margin-bottom: 8px;
+  font-size: 40px;
+  color: white;
+}
+
+.text {
+  font-weight: 500;
+  line-height: 150%;
+  margin-bottom: 40px;
+}
+
+.input {
+  border-radius: 0 !important;
+}
+
+.button {
+  margin-top: 40px;
+  height: 40px;
+  margin-left: auto;
+  padding: 15px;
+
+  &:active {
+    background: #DCE9FF;
+    color: #1F58B3;
+  }
+}
+
+.label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 8px;
+}
+
+.select {
+  margin-bottom: 20px;
+}

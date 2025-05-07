@@ -1,0 +1,72 @@
+@import "src/assets/styles/mixins";
+
+@font-face {
+  font-family: 'GilroyMedium';
+  src: local('GilroyMedium'), url('../../assets/fonts/GilroyMedium/font.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'GilroySemiBold';
+  src: local('GilroySemiBold'), url('../../assets/fonts/GilroySemiBold/font.woff') format('woff');
+}
+
+
+.gathering {
+  font-family: "GilroyMedium", serif;
+  color: white;
+
+  h1,h2,h3,h4 {
+    font-family: "GilroySemiBold", serif;
+  }
+
+  h2 {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    text-transform: uppercase;
+  }
+
+  h4 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+  }
+}
+
+p {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.6px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.loaded{
+  padding-bottom: 108px;
+
+  @include respond-to(m) {
+    padding-bottom: 138px;
+  }
+
+  @include respond-to(s) {
+    padding-bottom: 125px;
+  }
+
+  @include respond-to(xs) {
+    padding-bottom: 180px;
+  }
+}
+
+.loader{
+  padding-bottom: 63px;
+
+  @include respond-to(xs) {
+    padding-bottom: 55px;
+  }
+}

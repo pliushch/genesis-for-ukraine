@@ -1,0 +1,55 @@
+@import "src/assets/styles/mixins";
+
+.wrapper {
+  background: #DCE9FF;
+  overflow: hidden;
+  padding: 40px 35px 140px 40px;
+
+  @include respond-to(l) {
+    padding: 80px 80px 500px 80px;
+  }
+}
+
+.title {
+  font-size: 26px;
+  margin-bottom: 40px;
+
+  @include respond-to(l) {
+    font-size: 80px;
+    margin-bottom: 100px;
+  }
+}
+
+.list {
+  margin-left: 20%;
+  margin-right: -50px;
+
+  @include respond-to(l) {
+    margin-right: -80px;
+    margin-left: 50%;
+  }
+}
+
+.listItem {
+  margin-bottom: 25px;
+  border-bottom: 1px solid #898796;
+  padding-bottom: 25px;
+  font-size: 14px;
+  padding-right: 50px;
+  display: flex;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include respond-to(l) {
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    font-size: 28px;
+    padding-right: 80px;
+  }
+}
+
+.listNumeric {
+  margin-right: 50px;
+}

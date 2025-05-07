@@ -1,0 +1,67 @@
+@import "src/assets/styles/mixins";
+
+.wrapper {
+  background: $light;
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  @include sectionSidePaddings;
+  @include pageContentWidth(352px);
+  display: flex;
+  flex-direction: column;
+  @include respond-to(l) {
+    justify-content: center;
+  }
+}
+
+.textWrapper {
+  text-align: center;
+}
+
+.succeed {
+  margin-bottom: 40px;
+}
+
+.title {
+  margin-bottom: 8px;
+  @include respond-to(l) {
+    font-size: 32px;
+  }
+}
+
+.subtitle {
+  font-weight: 500;
+  line-height: 150%;
+  color: $lightSuccess;
+  margin-bottom: 32px;
+}
+
+.block {
+  margin-top: auto;
+  @include respond-to(l) {
+    margin-top: 0;
+  }
+}
+
+.card {
+  background: #FFFFFF;
+  border-radius: 16px;
+  margin-bottom: 24px;
+  padding: 24px;
+}
+
+.warning {
+  margin-bottom: 24px;
+}
+
+.text {
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.button {
+  height: 40px;
+  width: 100%;
+}

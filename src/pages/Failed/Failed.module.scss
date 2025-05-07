@@ -1,0 +1,54 @@
+@import "src/assets/styles/mixins";
+
+.wrapper {
+  background: $light;
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  @include sectionSidePaddings;
+  @include pageContentWidth(352px);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  @include respond-to(l) {
+    justify-content: center;
+  }
+}
+
+.error {
+  margin-bottom: 40px;
+}
+
+.title {
+  margin-bottom: 8px;
+  @include respond-to(l) {
+    font-size: 32px;
+  }
+}
+
+.text {
+  font-weight: 500;
+  line-height: 150%;
+  color: $lightSuccess;
+  margin-bottom: 56px;
+}
+
+.buttonsBlock {
+  width: 100%;
+  margin-top: auto;
+  @include respond-to(l) {
+    margin-top: 0;
+  }
+}
+
+.button, .buttonAgain {
+  height: 40px;
+  width: 100%;
+}
+
+.buttonAgain {
+  margin-bottom: 16px;
+}

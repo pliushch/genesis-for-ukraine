@@ -1,0 +1,31 @@
+@import "src/assets/styles/mixins";
+
+.wrapper {
+  position: relative;
+  border-radius: 20px;
+  width: 340px;
+  max-width: 95vw;
+  max-height: 95vh;
+  background: white;
+  color: $primary;
+  overflow: hidden;
+  padding: 20px 20px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.controlWrapper {
+  flex-shrink: 0;
+  cursor: pointer;
+  padding: 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+}
+
+.control {
+  fill: $primary;
+  width: 16px;
+  height: 16px;
+}

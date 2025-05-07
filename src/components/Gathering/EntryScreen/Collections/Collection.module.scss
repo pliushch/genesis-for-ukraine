@@ -1,0 +1,200 @@
+@import "src/assets/styles/mixins";
+
+.collectionBg {
+  width: 100%;
+  z-index: 1000;
+  position: fixed;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.90) 0%, rgba(0, 0, 0, 0.85) 100%);
+
+  .wrapper {
+    @include pageContentWidth($maximalContainerWidth);
+
+    .amount {
+      padding: 24px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 36px ;
+
+      h3 {
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 130%;
+      }
+
+      .buttonSupport {
+        height: 66px;
+        font-size: 29px;
+
+        .hexagon {
+          height: 100%;
+          border-right: 3px solid white;
+          display: flex;
+          align-items: center;
+          padding:  0 15px;
+
+          svg {
+            height: 36px;
+            width: 33px;
+          }
+        }
+
+        p {
+          align-items: center;
+          padding:  0 20px;
+          font-size: 24px;
+          font-weight: 600;
+        }
+      }
+
+      .hexagonComponent {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 14px;
+
+        span {
+          margin-left: 2px;
+        }
+      }
+    }
+  }
+}
+
+
+@include respond-to(s) {
+  .collectionBg {
+    .wrapper {
+      .amount {
+        flex-direction: column;
+        text-align: center;
+        padding: 35px 0;
+        gap: 28px;
+
+        h3 {
+          font-size: 30px;
+          width: 100%;
+        }
+
+        .buttonSupport {
+          height: 42px;
+          order: 1;
+
+          .hexagon {
+            padding:  0 7px;
+
+            svg {
+              height: 24px;
+              width: 21px;
+            }
+          }
+
+          p {
+            padding:  0 20px;
+            font-size: 16px;
+
+          }
+        }
+
+        .hexagonComponent {
+          display: flex;
+          justify-content: space-between;
+          gap: 10px;
+          margin-bottom: 12px;
+
+          span {
+            margin-left: 6px;
+          }
+
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(xs) {
+  .collectionBg {
+    .wrapper {
+      .amount {
+        flex-direction: column;
+        text-align: center;
+
+        .buttonSupport {
+          height: 42px;
+          order: 1;
+
+          .hexagon {
+            padding:  0 7px;
+
+            svg {
+              height: 24px;
+              width: 21px;
+            }
+          }
+
+          p {
+            padding:  0 77px;
+            font-size: 16px;
+
+          }
+        }
+
+        .hexagonComponent {
+          display: flex;
+          justify-content: space-between;
+          gap: 6px;
+          margin-bottom: 12px;
+
+          span {
+            margin-left: 6px;
+          }
+
+        }
+      }
+    }
+  }
+}
+
+
+@include respond-to(m) {
+  .collectionBg {
+    .wrapper {
+      .amount {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0 ;
+        gap: 10px;
+
+        .buttonSupport {
+          height: 66px;
+          font-size: 29px;
+          order: 1;
+
+
+          p {
+            padding:  0 80px;
+          }
+        }
+
+        h3 {
+          width: 100%;
+
+        }
+
+        .hexagonComponent {
+          display: flex;
+          justify-content: space-between;
+          gap: 10px;
+          margin-bottom: 12px;
+
+          span {
+            margin-left: 6px;
+          }
+
+        }
+      }
+    }
+  }
+}

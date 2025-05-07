@@ -1,0 +1,32 @@
+@import "src/assets/styles/mixins";
+
+.icon {
+  margin-bottom: 48px;
+}
+
+h2.title {
+  margin-bottom: 24px;
+  @include respond-to(l) {
+    font-size: 32px;
+  }
+}
+
+.text {
+  font-weight: 500;
+  line-height: 150%;
+  margin-bottom: 8px;
+}
+
+.button {
+  width: 100%;
+  height: 40px;
+}
+
+.radio {
+  margin-bottom: 8px;
+}
+
+.payment {
+  margin-top: 40px;
+  margin-bottom: 24px;
+}

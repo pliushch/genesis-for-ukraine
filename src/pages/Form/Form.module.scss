@@ -1,0 +1,123 @@
+@import "src/assets/styles/mixins";
+
+.wrapper {
+  background: $primary_background;
+}
+
+.container {
+  @include sectionSidePaddings;
+  max-width: 736px;
+  box-sizing: content-box;
+  @include respond-to(l) {
+    padding: 80px;
+  }
+}
+
+.title {
+  margin-bottom: 40px;
+
+  @include respond-to(l) {
+    font-size: 60px;
+    margin-bottom: 80px;
+  }
+}
+
+.subtitle {
+  font-size: 24px;
+  line-height: 150%;
+  margin-bottom: 24px;
+}
+
+.form {
+  margin-bottom: 80px;
+}
+
+.inputsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  margin-top: -12px;
+  margin-bottom: 80px;
+  @include respond-to(l) {
+    margin: -16px;
+    margin-bottom: 80px;
+  }
+}
+
+.input {
+  flex-basis: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  @include respond-to(l) {
+    padding: 16px;
+    flex-basis: 50%;
+  }
+}
+
+.formBottom {
+  margin-bottom: 40px;
+}
+
+.text {
+  margin-bottom: 7px;
+  font-weight: 500;
+}
+
+.radioWrapper {
+  margin-bottom: 24px;
+}
+
+.radio {
+  margin-bottom: 8px;
+}
+
+.subtext {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+  color: $lightSuccess;
+  margin-bottom: 8px;
+}
+
+.file {
+  display: flex;
+  align-items: center;
+
+  &::file-selector-button {
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 13px 16px;
+    border: 1px solid $primary;
+    border-radius: 8px;
+    cursor: pointer;
+    background: transparent;
+    color: $primary;
+    margin-bottom: 32px;
+  }
+}
+
+.link {
+  color: #0000EE;
+  margin-left: 5px;
+}
+
+.label {
+  font-weight: 500;
+  line-height: 150%;
+  margin-bottom: 8px;
+}
+
+.button {
+  width: 100%;
+  height: 40px;
+
+  @include respond-to(l) {
+    max-width: 256px;
+  }
+}
+
+.error {
+  margin-top: 5px;
+  color: $error
+}

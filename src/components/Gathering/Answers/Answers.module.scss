@@ -1,0 +1,66 @@
+@import "src/assets/styles/mixins";
+
+.answersBgColor {
+  .answersBg {
+    background: #7e7e7e url('../../../assets/images/gathering/answers/answersBg.jpg') no-repeat bottom;
+    .wrapper {
+      padding: 177px 0;
+      @include pageContentWidth($maximalContainerWidth);
+
+      h2 {
+        line-height: 105.3%;
+        margin-bottom: 71px;
+      }
+
+    }
+  }
+}
+
+@include respond-to(s) {
+  .answersBgColor {
+    .answersBg {
+
+      .wrapper {
+        @include  mobilePaddings;
+        padding-top: 80px;
+
+        h2 {
+          font-size: 46px;
+          margin-bottom: 50px;
+        }
+      }
+    }
+
+  }
+}
+
+
+@include respond-to(xs) {
+  .answersBgColor{
+    background: linear-gradient(180deg, #7E7E7E 0%, #081636 100%);
+    mix-blend-mode: multiply;
+    .answersBg {
+      background: url('../../../assets/images/gathering/answers/faqs-mob.png') no-repeat bottom;
+      background-size: contain;
+
+      .wrapper {
+        @include  mobilePaddings;
+        padding-top: 80px;
+
+        h2 {
+          font-size: 36px;
+          margin-bottom: 6px;
+        }
+      }
+    }
+  }
+}
+
+
+@include respond-to(m) {
+  .answersBgColor {
+    .answersBg {
+      @include mobilePaddings;
+    }
+  }
+}

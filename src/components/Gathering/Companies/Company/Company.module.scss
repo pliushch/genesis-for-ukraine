@@ -1,0 +1,95 @@
+@import "src/assets/styles/mixins";
+
+.companyWrapperLight,
+.companyWrapperGrey {
+  max-width: 580px;
+  margin-bottom: 37px;
+  padding: 35px 60px 35px 50px;
+  break-inside: avoid;
+
+  @include respond-to(l) {
+    max-width: 1280px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.companyWrapperGreyLeft {
+  background: grey url('../../../../assets/images/gathering/company/companies-counter-left.png') no-repeat right;
+
+}
+.companyWrapperGreyRight {
+  background: grey url('../../../../assets/images/gathering/company/companies-counter-right.png') no-repeat left;
+
+  @include respond-to('m') {
+    background: grey url('../../../../assets/images/gathering/company/companies-counter-left.png') no-repeat right;
+  }
+
+  @include respond-to('s') {
+    background: grey url('../../../../assets/images/gathering/company/companies-counter-left.png') no-repeat right;
+  }
+}
+
+.companyWrapperLight {
+  background-color: white;
+  border: 3px solid grey;
+}
+
+.companyWrapperLight,
+.companyWrapperGrey {
+  .companyAction {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hexagonWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 32px;
+
+    @include respond-to(l) {
+      margin-top: 0;
+    }
+  }
+}
+
+
+@include respond-to(s) {
+  .companyWrapperLight,
+  .companyWrapperGrey {
+    margin: 0 auto 37px;
+    width: 100%;
+
+  }
+
+}
+
+@include respond-to(xs) {
+  .companyWrapperLight,
+  .companyWrapperGrey{
+    padding: 25px 18px;
+    min-width: 306px;
+    max-width: 360px;
+
+    .hexagonWrapper {
+      justify-content: space-between;
+      gap: 0;
+      margin-top: 24px;
+    }
+
+    .companyAction {
+      .companyLogo {
+        width: 78px;
+
+        svg {
+          max-height: 28px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
