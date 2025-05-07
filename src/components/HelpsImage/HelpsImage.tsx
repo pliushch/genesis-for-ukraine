@@ -6,16 +6,10 @@ import background from 'src/assets/images/pexels-brett-sayles.png'
 
 const HelpsImage = () => {
   return (
-    <div>
-    <ul className={styles.list}>
-      <li className={styles.listItem}>
-        <img className={styles.image} src={help} alt="military goods" />
-      </li>
-      <li className={styles.listItem}>
-        <img className={styles.image} src={help2} alt="military goods" />
-      </li>
-    </ul>
-      <img className={styles.background} src={background} alt="background" />
+    <div className={styles.wrapper}>
+      <img className={styles.imageMobile} src={help2} alt="military goods"/>
+      <img className={styles.imageDesktop} src={help} alt="military goods"/>
+      <img className={styles.background} src={background} alt="background"/>
     </div>
   );
 };

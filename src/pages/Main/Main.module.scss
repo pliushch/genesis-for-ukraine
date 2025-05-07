@@ -29,5 +29,13 @@
 }
 
 .helpsWrapper {
-  padding-top: 300px;
+  padding-top: 280px;
+
+  @media screen and (min-width: 1201px) and (max-width: 1500px) {
+    padding-top: 400px;
+  }
+
+  //@include respond-to(l) {
+  //  padding-top: 300px;
+  //}
 }

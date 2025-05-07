@@ -1,6 +1,6 @@
 @import "src/assets/styles/mixins";
 
-.list {
+.wrapper {
   padding-top: 26px;
   padding-bottom: 26px;
   background: #140F2E;
@@ -8,23 +8,24 @@
   @include respond-to(l) {
     padding-top: 0;
     padding-bottom: 0;
-    display: flex;
   }
 }
 
-.listItem {
-  flex-grow: 1;
-}
-
-.image {
+.imageMobile {
   display: block;
   width: 100%;
   height: 100%;
 
-  @include respond-to(l) {
-    max-height: 587px;
-    height: 100%;
-  }
+  @include hideOnDesktop();
+}
+
+.imageDesktop {
+  @include hideOnMobile();
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-height: 587px;
 }
 
 .background {

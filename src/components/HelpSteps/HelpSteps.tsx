@@ -20,6 +20,7 @@ const HelpSteps = ({ className = '' }: HelpStepsProps) => {
         </li>
         <li className={styles.listItem}><span className={styles.listNumeric}>3.</span>Узгодити пакет документів</li>
         <li className={styles.listItem}><span className={styles.listNumeric}>4.</span>Отримати допомогу</li>
+        <li className={styles.description}>* Заявку може заповнити співробітник екосистеми Genesis та партнерських компаній</li>
       </ol>
     </div>
   );
