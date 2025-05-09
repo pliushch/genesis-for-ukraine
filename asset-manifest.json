@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/genesis-for-ukraine/static/css/main.1841fd84.css",
-    "main.js": "/genesis-for-ukraine/static/js/main.2d97577e.js",
+    "main.js": "/genesis-for-ukraine/static/js/main.5f11b14b.js",
     "static/media/military-help.png": "/genesis-for-ukraine/static/media/military-help.01b6eb86d1792c4eb405.png",
     "static/media/military-help-all.png": "/genesis-for-ukraine/static/media/military-help-all.edd012bd4390dbd38d81.png",
     "static/media/helps.png": "/genesis-for-ukraine/static/media/helps.04fb3c3595e71266047d.png",
@@ -14,13 +14,12 @@
     "static/media/error.svg": "/genesis-for-ukraine/static/media/error.6b9dda30f3210e68fcd9ab87c62c81ca.svg",
     "static/media/close.svg": "/genesis-for-ukraine/static/media/close.7c1e42230c002418ceecb0d901ae3409.svg",
     "static/media/arrow-simple.svg": "/genesis-for-ukraine/static/media/arrow-simple.fcf2e1535d6fb876488b6f797a694164.svg",
-    "static/media/warning.svg": "/genesis-for-ukraine/static/media/warning.3b953cad959b8c6a48a2b747c9845f72.svg",
     "static/media/succeed.svg": "/genesis-for-ukraine/static/media/succeed.d3362d50969d27b4eae815d69c946304.svg",
     "main.1841fd84.css.map": "/genesis-for-ukraine/static/css/main.1841fd84.css.map",
-    "main.2d97577e.js.map": "/genesis-for-ukraine/static/js/main.2d97577e.js.map"
+    "main.5f11b14b.js.map": "/genesis-for-ukraine/static/js/main.5f11b14b.js.map"
   },
   "entrypoints": [
     "static/css/main.1841fd84.css",
-    "static/js/main.2d97577e.js"
+    "static/js/main.5f11b14b.js"
   ]
 }
